@@ -11,6 +11,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.boot.autoconfigure.web.WebProperties;
 
+import com.self.psmf.contstant.UserRole;
+
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
@@ -34,4 +36,7 @@ public class UserProfile extends BaseModel {
     private Boolean isActive;
     @Column(name= "PASSWORD")
     private String password;
+    @Column(name = "USER_ROLE")
+    private UserRole userRole;
+    
 }
