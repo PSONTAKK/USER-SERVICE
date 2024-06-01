@@ -1,4 +1,4 @@
-package com.self.psmf;
+package com.self.ace;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

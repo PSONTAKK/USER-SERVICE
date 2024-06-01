@@ -1,8 +1,6 @@
-package com.self.psmf.service.dto;
+package com.self.ace.service.dto;
 
-import com.self.psmf.contstant.UserRole;
-
-import jakarta.validation.constraints.NotNull;
+import com.self.ace.contstant.UserRole;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

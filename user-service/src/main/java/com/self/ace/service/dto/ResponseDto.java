@@ -1,4 +1,4 @@
-package com.self.psmf.service.dto;
+package com.self.ace.service.dto;
 
 public class ResponseDto {
 

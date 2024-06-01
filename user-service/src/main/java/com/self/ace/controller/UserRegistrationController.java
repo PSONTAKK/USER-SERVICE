@@ -1,8 +1,8 @@
-package com.self.psmf.controller;
+package com.self.ace.controller;
 
-import com.self.psmf.service.UserRegistrationService;
-import com.self.psmf.service.dto.ResponseDto;
-import com.self.psmf.service.dto.UserRegistrationRequestDto;
+
+import com.self.ace.service.UserRegistrationService;
+import com.self.ace.service.dto.UserRegistrationRequestDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -19,7 +19,7 @@ public class UserRegistrationController {
 
 
     @PostMapping("/register-user")
-    public ResponseEntity<ResponseDto> registerUser(@RequestBody UserRegistrationRequestDto userRegistrationRequestDto){
+    public ResponseEntity<String> registerUser(@RequestBody UserRegistrationRequestDto userRegistrationRequestDto){
         return null;
     }
 	

@@ -1,4 +1,4 @@
-package com.self.psmf.contstant;
+package com.self.ace.contstant;
 
 public enum UserRole {
 	

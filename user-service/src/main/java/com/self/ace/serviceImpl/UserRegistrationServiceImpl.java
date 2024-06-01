@@ -1,24 +1,22 @@
-package com.self.psmf.serviceImpl;
+package com.self.ace.serviceImpl;
 
-import com.self.psmf.contstant.UserRole;
-import com.self.psmf.data.entity.UserProfile;
-import com.self.psmf.data.repository.UserProfileRepository;
+import com.self.ace.contstant.UserRole;
+import com.self.ace.data.entity.UserProfile;
+import com.self.ace.data.repository.UserProfileRepository;
+import com.self.ace.service.UserRegistrationService;
+import com.self.ace.service.dto.UserRegistrationRequestDto;
 import io.micrometer.common.util.StringUtils;
-import liquibase.util.StringUtil;
 import org.apache.commons.lang3.ObjectUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.self.psmf.service.UserRegistrationService;
-import com.self.psmf.service.dto.UserRegistrationRequestDto;
-
 import java.util.UUID;
 
 @Service
 
-public class UserRegistrationServiceImpl implements UserRegistrationService{
+public class UserRegistrationServiceImpl implements UserRegistrationService {
 
 	
 	private final Logger log = LoggerFactory.getLogger(UserRegistrationServiceImpl.class);
