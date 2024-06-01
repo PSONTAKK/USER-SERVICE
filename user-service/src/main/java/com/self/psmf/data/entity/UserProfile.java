@@ -1,5 +1,6 @@
 package com.self.psmf.data.entity;
 
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,9 +8,10 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.boot.autoconfigure.web.WebProperties;
+
 
 import com.self.psmf.contstant.UserRole;
 
@@ -17,6 +19,7 @@ import com.self.psmf.contstant.UserRole;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
+@Builder
 @Table(name = "USER_PROFILE", schema = "USERS")
 public class UserProfile extends BaseModel {
 
@@ -38,5 +41,7 @@ public class UserProfile extends BaseModel {
     private String password;
     @Column(name = "USER_ROLE")
     private UserRole userRole;
+    @Column(name = "REFER_CODE")
+    private String referalCode;
     
 }

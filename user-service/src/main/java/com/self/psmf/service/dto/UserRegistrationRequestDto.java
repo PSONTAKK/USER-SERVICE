@@ -19,4 +19,5 @@ public class UserRegistrationRequestDto {
 	private String userEmail;
 	private String password;
 	private UserRole userRole;
+	private String referalCode;
 }

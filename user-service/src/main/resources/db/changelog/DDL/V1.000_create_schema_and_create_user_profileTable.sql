@@ -26,6 +26,7 @@ BEGIN
             user_email VARCHAR(80),
             is_active BOOLEAN,
             password VARCHAR(50),
+            referal varchar(50),
             created_date TIMESTAMP,
             created_by VARCHAR(50),
             updated_date TIMESTAMP,
