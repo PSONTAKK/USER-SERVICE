@@ -6,11 +6,12 @@ import com.self.ace.data.repository.UserProfileRepository;
 import com.self.ace.service.UserRegistrationService;
 import com.self.ace.service.dto.UserRegistrationRequestDto;
 import io.micrometer.common.util.StringUtils;
-import org.apache.commons.lang3.ObjectUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.util.ObjectUtils;
+
 
 import java.util.UUID;
 
